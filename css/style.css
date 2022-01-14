@@ -4,11 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* ===================================
----------------CSS Reset--------------
+---------------Variables--------------
 =================================== */
-
 :root {
-    --bg-color: #AAAAAA;
+    --bg-color: #FFF;
     --bg-footer-color: #0A0826;
     --primary-color:#E02C6D;
     --text-header-color:#3A3A3A;
@@ -16,9 +15,6 @@
     --text-collection-info-color: #787885;
     --header-max-width: 1240px;
     --main-max-width: 1088px;
-    
-
-
 }
 
 /* ===================================
@@ -32,12 +28,17 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.2;
+    line-height: 1.25;
+    background: var(--bg-color)
 }
 
 a {
     text-decoration: none;
 }
+
+/* a:visited {
+    color: inherit;
+} */
 
 ul {
     list-style: none;
@@ -66,7 +67,77 @@ ul {
     font-size: 52px;
 }
 
+.text-primary {
+    color: var(--primary-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.btn-round {
+    border-radius: 41px;
+}
 /* ===================================
 ---------------Main Header------------
 =================================== */ 
+
+#main-header .header-container {
+    max-width: var(--header-max-width);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#main-header .header-container .main-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.main-nav .nav-links ul {
+    display: flex;
+}
+
+.main-nav .nav-links ul li a {
+    padding: 20px 17px;
+    font-weight: 600;
+}
+
+#main-header .header-container .header-banner {
+    display: flex;
+    justify-content: space-between;
+    gap: 131px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header-banner .banner-text>*{
+    margin-bottom: 16px;
+}
+
+.header-banner .banner-text p {
+    line-height: 1.5;
+}
+
+#main-header .header-container .banner-img {
+    position: relative;
+}
+
+#main-header .header-container .banner-img .camera-bg {
+    width: 475px;
+    height: 475px;
+}
+
+#main-header .header-container .banner-img .camera {
+    width: 440px;
+    height: 414px;
+    position: absolute;
+    top: 30px;
+    left: 2px;
+}
 
