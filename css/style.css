@@ -11,8 +11,8 @@
     --bg-footer-color: #0A0826;
     --primary-color:#E02C6D;
     --text-header-color:#3A3A3A;
-    --text-collection-heading-color: #18191F;
-    --text-collection-info-color: #787885;
+    --text-product-heading-color: #18191F;
+    --text-product-info-color: #787885;
     --header-max-width: 1240px;
     --main-max-width: 1088px;
 }
@@ -47,6 +47,10 @@ ul {
 /* ===================================
 ---------------Utilities--------------
 =================================== */ 
+.ss-heading {
+    font-size: 14px;
+}
+
 .xs-heading {
     font-size: 16px;
 }
@@ -83,6 +87,10 @@ ul {
 .btn-round {
     border-radius: 41px;
 }
+
+.text-center {
+    text-align: center;
+}
 /* ===================================
 ---------------Main Header------------
 =================================== */ 
@@ -91,6 +99,8 @@ ul {
     max-width: var(--header-max-width);
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 #main-header .header-container .main-nav {
@@ -153,7 +163,7 @@ ul {
 .stores {
     max-width: 1110px;
     height: 110px;
-    margin: 50px auto 0;
+    margin: 50px auto 60px;
     position: relative;
     display: flex;
     align-items: center;
@@ -186,6 +196,67 @@ ul {
     gap: 60px;
     padding: 20px;
 }
+
+/* ===================================
+-----------Products Section-----------
+=================================== */ 
+#products .main-container {
+    max-width: var(--main-max-width);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-container>h3 {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.main-container .products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.products-container .card {
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.products-container .card img {
+    width: 300px;
+    height: 256px;
+}
+
+.products-container .card .product-text {
+    line-height: 1.5;
+}
+
+.products-container .card .product-text h3 {
+    color: var(--text-product-heading-color);
+    margin: 16px 0 6px 0;
+}
+
+.products-container .card .product-text h4 {
+    font-weight: 500;
+}
+
+.products-container .card .product-text .product-star {
+    color: #FB8200;
+}
+
+.products-container .card .product-text .product-star span {
+    font-weight: 700;
+    color: #5E6366;
+    margin-left: 6px;
+}
+
+.products-container .card .product-text p {
+    font-weight: 700;
+    color: var(--text-product-info-color);
+
+}
+
 
 @keyframes cursor-moving {
     0%{
