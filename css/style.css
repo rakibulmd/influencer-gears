@@ -124,6 +124,11 @@ ul {
     line-height: 1.5;
 }
 
+.header-banner .banner-text a i {
+   opacity: 1;
+   animation: cursor-moving 1200ms linear infinite; 
+}
+
 #main-header .header-container .banner-img {
     position: relative;
 }
@@ -141,3 +146,27 @@ ul {
     left: 2px;
 }
 
+@keyframes cursor-moving {
+    0%{
+        transform: translateX(0);
+    }
+
+    40% {
+        opacity: 1;
+    }
+    60%{
+        transform: translateX(20px);
+    }
+
+    60% {
+        opacity: 0;
+    }
+    90% {
+        transform: translateX(0px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
