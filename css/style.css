@@ -151,7 +151,7 @@ ul {
 
 .header-banner .banner-text a i {
    opacity: 1;
-   animation: cursor-moving 1200ms linear infinite; 
+   animation: arrow-moving 1200ms linear infinite; 
 }
 
 #main-header .header-container .banner-img {
@@ -175,38 +175,8 @@ ul {
 }
 
 #main-header .header-container .banner-img:hover .camera-bg {
-    animation: photo-zooming 1500ms linear infinite;
+    animation: photo-zooming 1800ms linear infinite;
 }
-
-@keyframes photo-zooming {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.5);
-        opacity: .0;
-    }
-
-    75% {
-        transform: scale(1);
-        opacity: .0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 0;
-    }
-    
-}
-
-/* @keyframes photo-zooming2 {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.5);
-    }
-} */
 
 /* ===================================
 -------------Store Section------------
@@ -443,7 +413,7 @@ ul {
 /* ===================================
 --------------Animations--------------
 =================================== */ 
-@keyframes cursor-moving {
+@keyframes arrow-moving {
     0%{
         transform: translateX(0);
     }
@@ -466,4 +436,23 @@ ul {
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+@keyframes photo-zooming {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: .0;
+    }
+    75% {
+        transform: scale(1);
+        opacity: .0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    } 
 }
