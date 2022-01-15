@@ -1,3 +1,6 @@
+/* ===================================
+---------------Main Header------------
+=================================== */
 .main-nav .nav-links ul {
     flex-direction: column;
 }
@@ -8,13 +11,6 @@
     padding: 7px;
 }
 
-/* #main-header .header-container .banner-img {
-    width: 30%;
-} */
-
-/* #main-header .header-container .header-banner {
-    align-items: stretch;
-} */
 #main-header .header-container .header-banner .xl-heading {
     font-size: 28px;
 }
@@ -33,7 +29,6 @@
 /* ===================================
 -----------Products Section-----------
 =================================== */ 
-
 .main-container .products-container {
     grid-template-columns: repeat(1, 1fr);
 }
@@ -41,8 +36,6 @@
 /* ===================================
 -----------Service Section------------
 =================================== */ 
-
-
 #service .service-container .payments {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

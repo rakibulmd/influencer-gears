@@ -29,7 +29,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.25;
-    background: var(--bg-color)
+    background: var(--bg-color);
 }
 
 a {
@@ -91,10 +91,10 @@ ul {
 .text-center {
     text-align: center;
 }
+
 /* ===================================
 ---------------Main Header------------
 =================================== */ 
-
 #main-header .header-container {
     max-width: var(--wide-max-width);
     margin: 0 auto;
@@ -102,6 +102,7 @@ ul {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    color: var(--text-header-color);
 }
 
 #main-header .header-container .main-nav {
@@ -141,7 +142,7 @@ ul {
     padding: 20px 0;
 }
 
-.header-banner .banner-text>*{
+.header-banner .banner-text>* {
     margin-bottom: 16px;
 }
 
@@ -149,7 +150,7 @@ ul {
     line-height: 1.5;
 }
 
-.header-banner .banner-text a i {
+.header-banner .banner-text a:hover i {
    opacity: 1;
    animation: arrow-moving 1200ms linear infinite; 
 }
@@ -181,7 +182,6 @@ ul {
 /* ===================================
 -------------Store Section------------
 =================================== */ 
-
 .stores {
     max-width: 1110px;
     min-height: 110px;
@@ -253,8 +253,6 @@ ul {
 
 .products-container .card img {
     width: 100%;
-    /* max-width: 300px;
-    max-height: 256px; */
 } 
 
 .products-container .card .product-text {
@@ -300,7 +298,6 @@ ul {
 /* ===================================
 -----------Service Section------------
 =================================== */ 
-
 #service .service-container {
     max-width: var(--wide-max-width);
     margin: 70px auto 0;
