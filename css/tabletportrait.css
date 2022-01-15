@@ -1,0 +1,61 @@
+/* ===================================
+---------------Main Header------------
+=================================== */
+#main-header .header-container .main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav .nav-logo {
+    margin-bottom: 12px;
+}
+
+#main-header .header-container .header-banner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.header-banner .banner-text {
+    order: 2;
+    text-align: center;
+}
+
+/* ===================================
+-------------Store Section------------
+=================================== */ 
+
+.stores {
+    margin: 30px auto 30px;
+}
+
+/* ===================================
+-----------Service Section------------
+=================================== */ 
+
+#service .service-container {
+    margin: 50px auto 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 20px;
+}
+
+#service .service-container .payments {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+}
+
+#service .service-container .payments h3 {
+   grid-column: span 2;
+}
+
+#service .service-container .payments .payment {
+   display: inline-block; 
+}
+
+#service .service-container .payments {
+    grid-row: span 1;
+}
