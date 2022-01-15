@@ -1,0 +1,69 @@
+.main-nav .nav-links ul {
+    flex-direction: column;
+}
+
+.main-nav .nav-links ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 7px;
+}
+
+#main-header .header-container .banner-img {
+    width: 30%;
+}
+
+#main-header .header-container .header-banner {
+    align-items: stretch;
+}
+#main-header .header-container .header-banner .xl-heading {
+    font-size: 28px;
+}
+
+#main-header .header-container .banner-img .camera {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#main-header .header-container .banner-img:hover .camera {
+    transform: none;
+}
+
+#main-header .header-container .banner-img:hover .camera-bg {
+    transform: none;
+}
+/* ===================================
+-----------Products Section-----------
+=================================== */ 
+
+.main-container .products-container {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* ===================================
+-----------Service Section------------
+=================================== */ 
+
+
+#service .service-container .payments {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: space-evenly;
+    justify-items: center;
+}
+
+#service .service-container .features {
+    flex-direction: column;
+}
+
+#service .service-container .features .feature:nth-child(2) {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-left: none;
+    border-right: none;
+}
+
+#service .service-container .contact {
+    flex-direction: column;
+   
+}
