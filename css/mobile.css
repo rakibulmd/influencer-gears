@@ -8,30 +8,35 @@
     padding: 7px;
 }
 
-#main-header .header-container .banner-img {
+/* #main-header .header-container .banner-img {
     width: 30%;
-}
+} */
 
-#main-header .header-container .header-banner {
+/* #main-header .header-container .header-banner {
     align-items: stretch;
-}
+} */
 #main-header .header-container .header-banner .xl-heading {
     font-size: 28px;
 }
 
-#main-header .header-container .banner-img .camera {
-    position: absolute;
-    top: 0px;
-    left: 0px;
+#main-header .header-container .banner-img .camera-bg {
+    max-width: 230px;
+    max-height: 230px;
 }
 
-#main-header .header-container .banner-img:hover .camera {
+#main-header .header-container .banner-img .camera {
+   max-width: 230px;
+    max-height: 218px;
+    top: 15px;
+}
+
+/* #main-header .header-container .banner-img:hover .camera {
     transform: none;
 }
 
 #main-header .header-container .banner-img:hover .camera-bg {
     transform: none;
-}
+} */
 /* ===================================
 -----------Products Section-----------
 =================================== */ 
