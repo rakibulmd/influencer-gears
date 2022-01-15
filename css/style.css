@@ -162,6 +162,7 @@ ul {
     /* width: 100%; */
     max-width: 475px;
     max-height: 475px;
+    overflow: hidden;
 }
 
 #main-header .header-container .banner-img .camera {
@@ -174,13 +175,23 @@ ul {
 }
 
 #main-header .header-container .banner-img:hover .camera {
-    transform: scale3d(1.1, 1.1, 1.1);
-    transition: 500ms;
+    /* transform: scale3d(1.1, 1.1, 1.1);
+    transition: 500ms; */
 }
 
 #main-header .header-container .banner-img:hover .camera-bg {
-    transform: translate3d(20px, -20px, -20px);
-    transition: 500ms;
+    /* transform: translate3d(20px, -20px, -20px);
+    transition: 500ms; */
+    animation: photo-zooming 1000ms linear infinite;
+}
+
+@keyframes photo-zooming {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
 }
 
 /* ===================================
