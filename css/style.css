@@ -101,6 +101,7 @@ ul {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 #main-header .header-container .main-nav {
@@ -156,16 +157,28 @@ ul {
 }
 
 #main-header .header-container .banner-img .camera-bg {
-    width: 475px;
-    height: 475px;
+    /* width: 100%; */
+    max-width: 475px;
+    max-height: 475px;
 }
 
 #main-header .header-container .banner-img .camera {
-    width: 440px;
-    height: 414px;
+    /* width: 100%; */
+    max-width: 440px;
+    max-height: 414px;
     position: absolute;
-    top: 30px;
-    left: 2px;
+    top: 20px;
+    left: 15px;
+}
+
+#main-header .header-container .banner-img:hover .camera {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: 500ms;
+}
+
+#main-header .header-container .banner-img:hover .camera-bg {
+    transform: translate3d(20px, -20px, -20px);
+    transition: 500ms;
 }
 
 /* ===================================
@@ -174,7 +187,7 @@ ul {
 
 .stores {
     max-width: 1110px;
-    height: 110px;
+    min-height: 110px;
     margin: 50px auto 60px;
     position: relative;
     display: flex;
@@ -203,6 +216,7 @@ ul {
 
 .stores .stores-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 60px;
@@ -241,9 +255,10 @@ ul {
 }
 
 .products-container .card img {
-    width: 300px;
-    height: 256px;
-}
+    width: 100%;
+    max-width: 300px;
+    max-height: 256px;
+} 
 
 .products-container .card .product-text {
     line-height: 1.5;
@@ -256,6 +271,7 @@ ul {
 
 .products-container .card .product-text h4 {
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .products-container .card .product-text .product-star {
@@ -297,6 +313,7 @@ ul {
     grid-template-rows: repeat(2, 1fr);
     grid-row-gap: 20px;
     grid-column-gap: 30px;
+    overflow: hidden;
 }
 
 #service .service-container> * {
@@ -396,6 +413,9 @@ ul {
 }
 
 
+/* ===================================
+--------------Animations--------------
+=================================== */ 
 @keyframes cursor-moving {
     0%{
         transform: translateX(0);
