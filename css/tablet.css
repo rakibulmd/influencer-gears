@@ -1,0 +1,66 @@
+.xl-heading {
+    font-size: 38px;
+}
+
+/* ===================================
+---------------Main Header------------
+=================================== */ 
+
+.main-nav .nav-links ul li a {
+    padding: 10px 10px;
+}
+
+#main-header .header-container .header-banner {
+    gap: 50px;
+    padding: 20px 0;
+}
+
+#main-header .header-container .banner-img {
+    width: 50%;
+}
+
+#main-header .header-container .banner-img .camera-bg {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#main-header .header-container .banner-img .camera {
+   max-width: 300px;
+    max-height: 288px;
+}
+
+/* ===================================
+-----------Products Section-----------
+=================================== */ 
+
+.main-container .products-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* ===================================
+-----------Service Section------------
+=================================== */ 
+
+#service .m-heading {
+    font-size: 18px;
+}
+
+#service .l-heading {
+   font-size: 28px; 
+}
+
+#service .service-container .payments .payment {
+    font-size: 72px;
+}
+
+/* ===================================
+-----------Footer Section------------
+=================================== */ 
+
+#main-footer .footer-container {
+    padding: 30px 20px 0;
+}
+
+#main-footer .footer-container .footer-links i {
+    margin: 17px 8px 30px 8px;
+}

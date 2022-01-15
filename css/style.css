@@ -107,6 +107,7 @@ ul {
 #main-header .header-container .main-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -118,6 +119,7 @@ ul {
 
 .main-nav .nav-links ul {
     display: flex;
+    align-items: center;
 }
 
 .main-nav .nav-links ul li a {
@@ -256,8 +258,8 @@ ul {
 
 .products-container .card img {
     width: 100%;
-    max-width: 300px;
-    max-height: 256px;
+    /* max-width: 300px;
+    max-height: 256px; */
 } 
 
 .products-container .card .product-text {
