@@ -357,6 +357,43 @@ ul {
     margin: 10px 0;
 }
 
+/* ===================================
+-----------Footer Section------------
+=================================== */ 
+#main-footer {
+    background: var(--bg-footer-color);
+    color: #fff;
+    margin-top: 80px;
+}
+
+#main-footer .footer-container {
+    max-width: var(--wide-max-width);
+    margin: 0 auto;
+    padding: 50px 20px 0;
+}
+
+#main-footer .footer-container h2 {
+    line-height: 1.5;
+}
+
+#main-footer .footer-container p {
+    line-height: 1.7;
+}
+
+#main-footer .footer-container .footer-links i {
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin: 17px 8px 50px 8px;
+    transition: 250ms;
+}
+
+#main-footer .footer-container .footer-links i:hover {
+    transform: scale(1.2);
+    color: var(--primary-color);
+}
 
 
 @keyframes cursor-moving {
