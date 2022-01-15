@@ -174,25 +174,39 @@ ul {
     left: 15px;
 }
 
-#main-header .header-container .banner-img:hover .camera {
-    /* transform: scale3d(1.1, 1.1, 1.1);
-    transition: 500ms; */
-}
-
 #main-header .header-container .banner-img:hover .camera-bg {
-    /* transform: translate3d(20px, -20px, -20px);
-    transition: 500ms; */
-    animation: photo-zooming 1000ms linear infinite;
+    animation: photo-zooming 1500ms linear infinite;
 }
 
 @keyframes photo-zooming {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: .0;
+    }
+
+    75% {
+        transform: scale(1);
+        opacity: .0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    
+}
+
+/* @keyframes photo-zooming2 {
     0% {
         transform: scale(1);
     }
     100% {
         transform: scale(1.5);
     }
-}
+} */
 
 /* ===================================
 -------------Store Section------------
