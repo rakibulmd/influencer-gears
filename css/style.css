@@ -140,6 +140,7 @@ ul {
     gap: 131px;
     align-items: center;
     padding: 20px 0;
+    align-items: center;
 }
 
 .header-banner .banner-text>* {

@@ -58,3 +58,10 @@
     flex-direction: column;
    
 }
+
+
+@media only screen and (max-width: 320px) {
+    #main-header .header-container .header-banner {
+        align-items: flex-start;
+    }
+}
